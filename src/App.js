@@ -5,6 +5,7 @@ import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
 import MapboxGL from 'mapbox-gl';
 import axios from 'axios';
+import './App.css';
 
 // Set your Mapbox token
 MapboxGL.accessToken = 'pk.eyJ1IjoiaGFuYWF6YWIiLCJhIjoiY201b3ZyOWN6MG1uZDJrcHRwbnRiYXlycSJ9.poGprqt-9cC6pOF52Se1Fg';
@@ -86,8 +87,8 @@ const App = () => {
 
   return (
     <div style={{ height: '100vh', display: 'flex', flexDirection: 'column' }}>
-      <header style={{ backgroundColor: '#ff5722', padding: '1em', color: 'white' }}>
-        <h1>Climate Emergency Dashboard</h1>
+      <header style={{ backgroundColor: '#fff', padding: '1em', color: 'black' }}>
+        <h1>CLIMATE EMERGENCY DASHBOARD</h1>
       </header>
       <div id="map" style={{ flexGrow: 1 }}></div>
       <footer style={{ backgroundColor: '#333', color: 'white', textAlign: 'center', padding: '0.5em' }}>

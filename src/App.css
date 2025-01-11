@@ -28,6 +28,74 @@
   color: #61dafb;
 }
 
+.mapboxgl-control-container {
+  visibility: hidden;
+}
+
+.mapboxgl-canvas-container {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  overflow: hidden;
+  transform: translate(-50%, -50%);;
+  top: 50%;
+  left: 50%;
+}
+
+/* Regular weight */
+@font-face {
+  font-family: 'Neue Hass Grotesk';
+  src: url('../public/fonts/NHaasGroteskDSPro-55Rg.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Italic */
+@font-face {
+  font-family: 'Neue Hass Grotesk';
+  src: url('../public/fonts/NHaasGroteskDSPro-55Rg.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Medium weight */
+@font-face {
+  font-family: 'Neue Hass Grotesk';
+  src: url('../public/fonts/NHaasGroteskDSPro-65Md.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Medium Italic */
+@font-face {
+  font-family: 'Neue Hass Grotesk';
+  src: url('../public/fonts/NHaasGroteskDSPro-66MdIt.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* Bold weight */
+@font-face {
+  font-family: 'Neue Hass Grotesk';
+  src: url('../public/fonts/NHaasGroteskDSPro-75Bd.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Bold Italic */
+@font-face {
+  font-family: 'Neue Hass Grotesk';
+  src: url('../public/fonts/NHaasGroteskDSPro-76BdIt.otf') format('opentype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Optional: Apply the font globally */
+body {
+  font-family: 'Neue Hass Grotesk', sans-serif;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
